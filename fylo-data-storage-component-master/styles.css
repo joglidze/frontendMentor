@@ -1,0 +1,215 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+
+
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+:root{
+  --gradient-orange:hsl(6, 100%, 80%);
+  --gradient-red:hsl(335, 100%, 65%);
+
+
+    --primary-gradient:linear-gradient(100deg,var(--gradient-orange) 20%, var(--gradient-red) 100%);
+    
+    
+
+
+    --pale-blue:hsl(243, 100%, 93%);
+    --grayish-blue:hsl(229, 7%, 55%);
+    --dark-blue:hsl(228, 56%, 26%);
+    --very-dark-blue:hsl(229, 57%, 11%);
+
+    --font-family:'Raleway', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: var(--very-dark-blue);
+  background-image: url(/images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size:contain;
+  background-attachment: fixed;
+  font-family: var(--font-family);
+}
+
+.main-cont{
+    display: flex;
+    justify-content: center;
+    margin-top:13rem;
+    align-items: center;
+    
+}
+
+.document-upload{
+    padding:50px;
+    background-color: var(--dark-blue);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 10px;
+    
+
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    margin-top:50px;
+    height:5px;
+    
+}
+.icons img{
+    background-color:var(--very-dark-blue);
+    padding:10px;
+    margin-right:20px;
+    border-radius:10px;
+    
+}
+@media (min-width:540px){
+    .icons{
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+} 
+
+
+
+.storage{
+    color:var(--grayish-blue);
+    background-color: var(--dark-blue);
+    padding:25px;
+    margin-left:20px;
+    width:40%;
+    margin-bottom: -55px;
+    border-radius: 10px;
+}
+
+.storage p{
+    margin-bottom: 10px;
+    
+}
+
+.flex{
+    display:flex;
+    justify-content: space-between;
+}
+
+.flex p{
+    margin:0;
+}
+
+.level{
+    padding:5px;
+    border-radius: 50px;
+    background: var(--primary-gradient);
+    width:80%;
+}
+
+.back-level{
+    padding:2px;
+    border-radius: 50px;
+    background: var(--very-dark-blue);
+    
+}
+
+.top{
+    padding:5px;
+    background-color: white;
+    width:10px;
+    border-radius: 10px;
+    
+   margin-left: auto;
+}
+
+@media (max-width:580px){
+    .main-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top:13rem;
+        align-items: center;
+        
+        
+    }
+    body{
+        background-image:url(/images/bg-mobile.png);
+        
+    }
+
+    .document-upload{
+        width:80%;
+    }
+    .storage{
+        width:80%;
+        margin-top:20px;
+        margin-right:20px;
+    }
+}
+
+
+
+.attribution{
+    margin-top:150px;
+}
+
+span{
+    color:white;
+}
+
+
+
+
