@@ -1,0 +1,188 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+:root{
+    --first-block:hsl(263, 55%, 52%);
+    --second-block:hsl(217, 19%, 35%);
+    --fourth-block:hsl(219, 29%, 14%);
+    --white:hsl(0, 0%, 100%);
+
+    --ft-color:hsl(0, 0%, 81%);
+
+    --ft-color-50:hsla(0, 0%, 81%, 0.508);
+
+    --bg-color:hsl(210, 46%, 95%);
+
+    --fn-family:'Barlow Semi Condensed', sans-serif;
+    --fn-wight-500:500;
+    --fn-weight-600:600;
+}
+
+body{
+    background-color: var(--bg-color);
+    
+    display: grid;
+    place-content: center;
+    font-family: var(--fn-family);
+}
+
+.border{
+    border-radius:10px;
+    
+}
+
+@media (max-width:50em){
+    .border{
+        border-radius:10px;
+        margin:1.5rem;
+    }
+}
+
+.profile-alignment{
+    display:flex;
+    align-items: center;
+    font-size:0.7rem;
+}
+.profile-alignment img{
+    margin-right:15px;
+    border-radius: 100%;
+}
+.profile-alignment h1{
+    color:var(--white)
+}
+
+.profile-alignment p{
+    color:var(--ft-color)
+}
+
+.first-block{
+    background-color: var(--first-block);
+    padding:20px 20px 20px 20px;
+    grid-column:span 2;
+    
+}
+
+.employee-comment{
+    font-size:1.3rem;
+    color:var(--white);
+    padding:20px 20px 10px 0px;
+    font-weight: var(--fn-wight-600);
+}
+
+.quote{
+    color:var(--ft-color-50);
+    font-weight: var(--fn-wight-500);
+}
+.second-block{
+    background-color: var(--second-block);
+    padding:20px 20px 10px 20px;
+    
+}
+
+.third-block{
+    background-color:var(--white);
+    padding:20px 20px 10px 20px;
+    color:black !important;
+
+}
+.third-block h1, p{
+    color:black;
+}
+.third-block p{
+    color:black;
+}
+
+.fourth-block{
+    background-color: var(--fourth-block);
+    padding:20px 20px 10px 20px;
+    grid-column:span 2;
+}
+
+.fifth-block{
+    background-color: var(--white);
+    padding:20px 20px 10px 20px;
+    grid-column-start:4;
+    grid-row-start:1;
+    grid-row-end:span 2;
+}
+
+.fifth-block h1, p{
+    color:black;
+}
+.fifth-block p{
+    color:black;
+}
+
+
+
+@media (min-width: 40em){
+
+    .main-grid{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+   
+    
+    width:min(95%,70rem);
+    margin-inline:auto;
+    gap: 1.5rem;
+}
+
+}

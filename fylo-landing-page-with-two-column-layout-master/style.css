@@ -1,0 +1,327 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+:root {
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --des-blue: hsl(238, 22%, 44%);
+
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+
+  --grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+
+  --font-header: "Raleway", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+}
+body {
+  font-family: var(--font-body);
+}
+
+header {
+  font-family: var(--font-header);
+  padding: 50px;
+  margin-bottom: 50px;
+  color: var(--very-dark-blue);
+}
+
+li:not(:last-child) {
+  margin-right: 50px;
+}
+input,
+button {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.header-input {
+  width: 50%;
+}
+.header-btn {
+  width: 40%;
+  margin-right: 0;
+  margin-left: 10px;
+  background-color: var(--bright-blue);
+  color: var(--grayish-blue);
+  border: none;
+}
+
+h1 {
+  font-family: var(--font-header);
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reverse-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.reverse-flex img:not(.arrow) {
+  padding: 20px 50px 50px 50px;
+}
+
+.header-par {
+  padding: 0px 0px 50px 0px;
+  width: 50%;
+}
+
+.curve {
+  background: url("/images/bg-curve-desktop.svg");
+  width: 100%;
+  background-size: cover;
+  padding: 50px;
+}
+
+.feature-section {
+  background-color: var(--grayish-blue);
+  padding: 50px;
+}
+
+.fylo-works {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 10px;
+}
+
+.testimonial-box {
+  background-color: white;
+  padding: 50px;
+  width: 80%;
+  margin-top: 50px;
+}
+
+.avatar {
+  padding: 0px;
+  width: 20%;
+  border-radius: 100%;
+  margin: 0px;
+}
+
+.reviewer {
+  padding: 20px;
+  margin-top: 20px;
+  margin: 0;
+  margin-left: -20px;
+  justify-content: flex-end;
+}
+
+.testimonial-box {
+  border-radius: 5px;
+}
+
+.avatar {
+  margin-right: 10px;
+}
+
+.fylo-works {
+  margin-top: 20px;
+}
+
+.fylo-works p {
+  text-decoration: underline;
+  color: var(--moderate-cyan);
+}
+
+.early-access {
+  padding: 50px;
+  background-color: var(--des-blue);
+  color: white;
+}
+
+.input {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+}
+
+.input button {
+  width: 80%;
+  background-color: var(--bright-blue);
+  color: var(--grayish-blue);
+  border: none;
+}
+.input input {
+  width: 200%;
+}
+
+.early-access {
+  display: flex;
+
+  align-items: center;
+}
+
+.early-access h1 {
+  margin-bottom: 10px;
+}
+
+.top-cont {
+  width: 30%;
+}
+
+.footer-cont {
+  background-color: var(--very-dark-blue);
+  color: var(--grayish-blue);
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-cont li img {
+  margin-top: -50px;
+  margin-bottom: 20px;
+}
+.footer-cont li {
+  padding: 5px;
+}
+
+.footer-cont i {
+  padding: 10px;
+  margin-right: 10px;
+  border: solid;
+  border-radius: 100%;
+}
+
+.footer-cont a {
+  color: white;
+}
+
+.footer-cont a:hover {
+  color: var(--bright-blue);
+  text-decoration: underline;
+}
+
+i:hover {
+  color: var(--bright-blue);
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsla(224, 93%, 58%, 0.666);
+}
+@media only screen and (max-width: 800px) {
+  .flex,
+  .reverse-flex,
+  .early-access,
+  .footer-cont,
+  .early-access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+  }
+  .input {
+    padding: 0;
+    margin: auto;
+    margin: 0px;
+    width: 40%;
+    align-items: center;
+  }
+  .input button {
+    width: 100%;
+  }
+  .top-cont {
+    width: 72%;
+  }
+  .reviewer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .testimonial-box {
+    margin: auto;
+    margin-top: 50px;
+  }
+  .header-par,
+  .para {
+    width: 100%;
+  }
+
+  .footer-cont li {
+    padding: 5px;
+    margin: 0;
+  }
+
+  .curve {
+    background: url("/images/bg-curve-mobile.svg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+  }
+}
