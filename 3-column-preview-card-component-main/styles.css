@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  --para-white: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--light-gray);
+}
+
+.main-cont {
+  display: flex;
+}
+
+.cont-1 {
+  background-color: var(--orange);
+}
+.cont-2 {
+  background-color: var(--dark-cyan);
+}
+.cont-3 {
+  background-color: var(--very-dark-cyan);
+}
+.cont {
+  padding: 50px;
+  height: 600px;
+}
+.cont h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--light-gray);
+  font-size: 3em;
+  padding: 40px 20px 20px 0px;
+  text-transform: uppercase;
+}
+
+.cont p {
+  padding: 20px 70px 50px 0px;
+  text-align: left;
+  color: var(--para-white);
+  line-height: 2em;
+  width: 280px;
+}
+
+button {
+  padding: 20px;
+  border-radius: 50px;
+  width: 200px;
+  border-color: transparent;
+}
+
+.cont-1 button {
+  color: var(--orange);
+  font-weight: 700;
+}
+.cont-2 button {
+  color: var(--dark-cyan);
+  font-weight: 700;
+}
+
+.cont-3 button {
+  color: var(--very-dark-cyan);
+}
+
+button:hover {
+  background-color: transparent;
+  cursor: pointer;
+  border-style: solid;
+  border-color: white;
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-cont {
+    display: block;
+
+    height: 100vh;
+  }
+}

@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root{
+    --soft-blue:hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%);
+    --line-blue:hsl(215, 32%, 27%);
+    --dark-blue:hsl(216, 50%, 16%);
+    --main-blue:hsl(217, 54%, 11%);
+    --white:hsl(0, 0%, 100%);
+}
+
+body{
+     display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: var(--main-blue);
+}
+
+
+.main-cont img{
+    padding:20px 20px 0px 20px;
+    border-radius: 30px;
+}
+
+
+.main-cont{
+    width: 300px;
+    
+    border-radius: 20px;
+   background-color: var(--dark-blue);
+    
+    
+}
+
+.main-cont h1{
+    font-size:18px;
+    color:var(--white);
+    margin-bottom: 10px;
+}
+.description{
+     padding: 20px 20px 0px 20px;
+}
+
+.description p{
+    color:var(--soft-blue);
+   
+}
+
+.amount-date{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    color:var(--soft-blue)
+}
+
+.amount-date p:first-child{
+    color:var(--cyan)
+}
+
+hr{
+    margin: 0px 20px;
+    color:var(--line-blue);
+    border-style:1px;
+    border-top:none;
+    border-left:none;
+    border-right: none;
+    opacity: 0.5;
+}
+
+
+i{
+    margin-right:5px
+}
+
+.owner{
+    display:flex;
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color:var(--soft-blue)
+}
+
+span{
+    color:var(--white)
+}
+.owner img{
+    border:solid white;
+    border-radius: 100%;
+    padding: 0;
+    margin-right:5px ;
+}
+
+h1:hover{
+    color:var(--cyan);
+    cursor:pointer;
+}
+
+span:hover{
+    color:var(--cyan);
+    cursor:pointer;
+}
+
+.view{
+    position: absolute;
+    
+    background: var(--cyan);
+    width:260px;
+    height: 260px;
+    display:grid;
+    place-content: center;
+    padding:20px 20px 20px 20px;
+    opacity: 0.5;
+    margin:20px;
+    border-radius:15px;
+    opacity: 0;
+   
+}
+
+.view:hover{ 
+    transition: 0.5s;
+    opacity:0.5;
+    cursor: pointer;
+}
