@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+}
+
+:root {
+  --dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --soft-light-magent: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-image: url(/images/bg-pattern-bottom-desktop.svg);
+  background-size: cover;
+}
+
+.review-cont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding: 4.5rem;
+}
+
+.review-cont h1 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+  color: var(--dark-magenta);
+}
+
+.stats-goal p {
+  color: var(--dark-grayish-magenta);
+}
+.stats-goal {
+  width: 25%;
+  line-height: 1.2;
+}
+
+.rate-box {
+  display: flex;
+  align-content: center;
+  padding: 20px;
+  background-color: var(--soft-light-magent);
+  margin-top: 20px;
+
+  color: var(--dark-magenta) !important;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.rate-box img:not(:last-child) {
+  margin-right: 10px;
+}
+
+.rate-1 {
+  margin-right: 100px;
+}
+
+.rate-2 {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.rate-3 {
+  margin-left: 100px;
+}
+
+.flex {
+  display: flex;
+  padding: 20px 0px 20px 20px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.flex img {
+  border-radius: 100%;
+  width: 50px;
+  margin: auto;
+  margin-right: 10px;
+}
+
+.comment-cont {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-magenta);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.comment-box p {
+  width: 260px;
+  text-align: left;
+  color: var(--soft-light-magent);
+  line-height: 1.25;
+}
+
+.comment-box h1 {
+  color: var(--soft-light-magent);
+}
+
+.flex p {
+  color: var(--soft-pink);
+}
+
+.comment-1 {
+  margin-top: -20px;
+}
+
+.comment-2 {
+  margin-bottom: -20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .stats-goal {
+    width: 65%;
+  }
+  .review-cont {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .rate-1,
+  .rate-2,
+  .rate-3 {
+    margin: 20px 0px 20px 0px;
+    height: 60px;
+  }
+  .comment-cont {
+    display: block;
+  }
+}
